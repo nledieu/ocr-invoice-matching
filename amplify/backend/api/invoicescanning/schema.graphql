@@ -1,0 +1,39 @@
+type InvoiceLine @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  line_number: Int
+  line_turnover_wo_taxes: String
+  line_quantity: String
+  line_item: Item @hasOne
+  line_unit: String
+  line_measure: String
+  line_unit_price: String
+}
+
+type Item @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  item_code: String
+  item_supplier: Supplier @hasOne
+  item_desc: String
+}
+
+type TaxComponents {
+  tax_code: String
+  tax_pct: Float
+  tax_amount: Float
+}
+
+type Invoice @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  supplier_invoice_number: String
+  supplier: Supplier @hasOne
+  total_turnover_wo_taxes: String
+  total_turnover_w_taxes: String
+  tax_components: TaxComponents
+}
+
+type Supplier @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  address: String
+  iban: String
+}

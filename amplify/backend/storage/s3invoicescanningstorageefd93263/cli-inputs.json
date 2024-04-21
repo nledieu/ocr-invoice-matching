@@ -1,0 +1,12 @@
+{
+  "resourceName": "s3invoicescanningstorageefd93263",
+  "bucketName": "invoice-scanning-storage-efd93263",
+  "policyUUID": "070854cc",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}

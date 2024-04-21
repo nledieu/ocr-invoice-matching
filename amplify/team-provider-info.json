@@ -1,0 +1,23 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-invoicescanning-staging-e57a1-authRole",
+      "UnauthRoleArn": "arn:aws:iam::471112562108:role/amplify-invoicescanning-staging-e57a1-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::471112562108:role/amplify-invoicescanning-staging-e57a1-authRole",
+      "Region": "eu-west-3",
+      "DeploymentBucketName": "amplify-invoicescanning-staging-e57a1-deployment",
+      "UnauthRoleName": "amplify-invoicescanning-staging-e57a1-unauthRole",
+      "StackName": "amplify-invoicescanning-staging-e57a1",
+      "StackId": "arn:aws:cloudformation:eu-west-3:471112562108:stack/amplify-invoicescanning-staging-e57a1/2ec001e0-f661-11ee-87ba-0642284d6e09",
+      "AmplifyAppId": "d3sa9yes6dlrht"
+    },
+    "categories": {
+      "auth": {
+        "invoicescanning": {}
+      },
+      "storage": {
+        "s3invoicescanningstorageefd93263": {}
+      }
+    }
+  }
+}

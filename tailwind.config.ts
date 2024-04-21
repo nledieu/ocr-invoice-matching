@@ -1,20 +1,49 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+import type {Config} from 'tailwindcss'
+export default {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        white: "#fff",
+        skyblue: {
+          "100": "rgba(2, 182, 215, 0.9)",
+          "200": "rgba(2, 182, 215, 0.8)",
+        },
+        black: "#000",
+      },
+      spacing: {},
+      fontFamily: {
+        inter: "Inter",
+      },
+      borderRadius: {
+        "6xl": "25px",
+      },
+    },
+    fontSize: {
+      "5xl": "1.5rem",
+      lgi: "1.188rem",
+      xl: "1.25rem",
+      base: "1rem",
+      "13xl": "2rem",
+      "7xl": "1.625rem",
+      inherit: "inherit",
+    },
+    screens: {
+      mq950: {
+        raw: "screen and (max-width: 950px)",
+      },
+      mq700: {
+        raw: "screen and (max-width: 700px)",
+      },
+      mq450: {
+        raw: "screen and (max-width: 450px)",
       },
     },
   },
-  plugins: [],
+  corePlugins: {
+    preflight: false,
+  },
 };
-export default config;
